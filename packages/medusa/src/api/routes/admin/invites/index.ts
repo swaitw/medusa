@@ -4,15 +4,15 @@ import { DeleteResponse } from "../../../../types/common"
 import middlewares from "../../../middlewares"
 import "reflect-metadata"
 
-const route = Router()
-
 export const unauthenticatedInviteRoutes = (app) => {
+  const route = Router()
   app.use("/invites", route)
 
   route.post("/accept", middlewares.wrap(require("./accept-invite").default))
 }
 
 export default (app) => {
+  const route = Router()
   app.use("/invites", route)
 
   route.get("/", middlewares.wrap(require("./list-invites").default))
@@ -32,8 +32,39 @@ export default (app) => {
   return app
 }
 
+/**
+ * @schema AdminInviteDeleteRes
+ * type: object
+ * required:
+ *   - id
+ *   - object
+ *   - deleted
+ * properties:
+ *   id:
+ *     type: string
+ *     description: The ID of the deleted Invite.
+ *   object:
+ *     type: string
+ *     description: The type of the object that was deleted.
+ *     default: invite
+ *   deleted:
+ *     type: boolean
+ *     description: Whether or not the Invite was deleted.
+ *     default: true
+ */
 export type AdminInviteDeleteRes = DeleteResponse
 
+/**
+ * @schema AdminListInvitesRes
+ * type: object
+ * required:
+ *   - invites
+ * properties:
+ *   invites:
+ *     type: array
+ *     items:
+ *       $ref: "#/components/schemas/Invite"
+ */
 export type AdminListInvitesRes = {
   invites: Invite[]
 }

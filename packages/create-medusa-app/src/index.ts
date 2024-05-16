@@ -1,6 +1,5 @@
-import path from "path"
 import Commander from "commander"
-import chalk from "chalk"
+import path from "path"
 
 import { prompt } from "enquirer"
 import { newStarter } from "./new-starter"
@@ -32,7 +31,11 @@ const questions = {
     type: "select",
     name: "storefront",
     message: "Which storefront starter would you like to install?",
-    choices: ["Gatsby Starter", "Next.js Starter", "None"],
+    choices: [
+      "Next.js Starter",
+      "medusa.express (Next.js)",
+      "None",
+    ],
   },
 }
 
@@ -50,6 +53,18 @@ const program = new Commander.Command(pkg.name)
   )
   .option(`-v --verbose`, `Show all installation output`)
   .parse(process.argv)
+
+const getStorefrontStarter = (starter: string): string => {
+  const selected = starter.toLowerCase()
+  switch (selected) {
+    case "next.js starter":
+      return "https://github.com/medusajs/nextjs-starter-medusa"
+    case "medusa.express (next.js)":
+      return "https://github.com/medusajs/medusa-express-nextjs"
+    default:
+      return ""
+  }
+}
 
 export const run = async (): Promise<void> => {
   track("CREATE_CLI")
@@ -94,22 +109,13 @@ export const run = async (): Promise<void> => {
 
   const hasStorefront = storefront.toLowerCase() !== "none"
   if (hasStorefront) {
-    const storefrontStarter =
-      storefront.toLowerCase() === "gatsby starter"
-        ? "https://github.com/medusajs/gatsby-starter-medusa"
-        : "https://github.com/medusajs/nextjs-starter-medusa"
+    const storefrontStarter = getStorefrontStarter(storefront)
     await newStarter({
       starter: storefrontStarter,
       root: path.join(projectRoot, `storefront`),
       verbose: progOptions.verbose,
     })
   }
-  await newStarter({
-    starter: "https://github.com/medusajs/admin",
-    root: path.join(projectRoot, `admin`),
-    keepGit: true,
-    verbose: progOptions.verbose,
-  })
 
   console.log(`
   Your project is ready 🚀. The available commands are:
@@ -117,17 +123,13 @@ export const run = async (): Promise<void> => {
     Medusa API
     cd ${projectRoot}/backend
     yarn start
-
-    Admin
-    cd ${projectRoot}/admin
-    yarn start
   `)
 
   if (hasStorefront) {
     console.log(`
     Storefront
     cd ${projectRoot}/storefront
-    yarn start
+    yarn dev
     `)
   }
 }

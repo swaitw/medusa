@@ -6,44 +6,6 @@ The Medusa JS Client provides easy access to the Medusa API from a client writte
 
 ## Documentation
 
-See our [API reference](https://docs.medusajs.com/api/store).
+You can learn more about how to install and use this client in [our documentation](https://docs.medusajs.com/js-client/overview).
 
-## Installation
-
-Install the package with:
-
-```sh
-npm install @medusajs/medusa-js
-# or
-yarn add @medusajs/medusa-js
-```
-
-## Usage
-
-Import Medusa as a default import and initiate it:
-
-```js
-import Medusa from '@medusajs/medusa-js';
-
-const medusa = new Medusa();
-
-const { cart } = await medusa.carts.create({});
-```
-
-## Configuration
-
-### Initialize with config object
-
-The package can be initialized with several options:
-
-```js
-const medusa = new Medusa({
-  maxRetries: 3,
-  baseUrl: 'https://api.example.com',
-});
-```
-
-| Option       | Default                             | Description                               |
-| ------------ | ----------------------------------- | ----------------------------------------- |
-| `maxRetries` | `0`                                 | The amount of times a request is retried. |
-| `baseUrl`    | `'http://localhost:9000'`           | The url to which requests are made to     |
+To learn more about the API endpoints that this client allows you to access check out our [API reference](https://docs.medusajs.com/api/store).

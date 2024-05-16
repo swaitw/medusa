@@ -1,11 +1,9 @@
 jest.unmock("axios")
-import axios from "axios"
 import MockAdapter from "axios-mock-adapter"
-
-import KlarnaProviderService from "../klarna-provider"
 import { carts } from "../../__mocks__/cart"
-import { TotalsServiceMock } from "../../__mocks__/totals"
 import { RegionServiceMock } from "../../__mocks__/region"
+import { TotalsServiceMock } from "../../__mocks__/totals"
+import KlarnaProviderService from "../klarna-provider"
 
 describe("KlarnaProviderService", () => {
   describe("createPayment", () => {
@@ -38,7 +36,26 @@ describe("KlarnaProviderService", () => {
     it("creates Klarna order", async () => {
       const result = await klarnaProviderService.createPayment(carts.frCart)
 
-      // expect(mockAxios.post).toHaveBeenCalledTimes(1)
+      expect(result).toEqual({
+        order_id: "123456789",
+        order_amount: 100,
+      })
+    })
+
+    it("creates Klarna order using new API", async () => {
+      const result = await klarnaProviderService.createPayment({
+        email: "",
+        context: {},
+        shipping_methods: [],
+        shipping_address: null,
+        id: "",
+        region_id: carts.frCart.region_id,
+        total: carts.frCart.total,
+        resource_id: "resource_id",
+        currency_code: carts.frCart.region.currency_code,
+        amount: carts.frCart.total
+      })
+
       expect(result).toEqual({
         order_id: "123456789",
         order_amount: 100,
@@ -149,6 +166,30 @@ describe("KlarnaProviderService", () => {
           order_id: "123456789",
         },
         carts.frCart
+      )
+
+      expect(result).toEqual({
+        order_id: "123456789",
+      })
+    })
+    
+    it("returns updated Klarna order using new API", async () => {
+      result = await klarnaProviderService.updatePayment(
+        {
+          order_id: "123456789",
+        },
+        {
+          email: "",
+          context: {},
+          shipping_methods: [],
+          shipping_address: null,
+          id: "",
+          region_id: carts.frCart.region_id,
+          total: carts.frCart.total,
+          resource_id: "resource_id",
+          currency_code: carts.frCart.region.currency_code,
+          amount: carts.frCart.total
+        }
       )
 
       expect(result).toEqual({
