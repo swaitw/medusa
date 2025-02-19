@@ -212,8 +212,84 @@ export const sidebar = sidebarAttachHrefCommonOptions([
   },
   {
     type: "category",
-    path: "/settings",
     title: "Settings",
-    autogenerate_path: "/settings",
+    children: [
+      {
+        type: "link",
+        title: "Overview",
+        path: "/settings",
+      },
+      {
+        type: "link",
+        title: "Store",
+        path: "/settings/store",
+      },
+      {
+        type: "link",
+        title: "Users",
+        path: "/settings/users",
+      },
+      {
+        type: "link",
+        title: "Regions",
+        path: "/settings/regions",
+      },
+      {
+        type: "link",
+        title: "Tax Regions",
+        path: "#",
+      },
+      {
+        type: "link",
+        title: "Return Reasons",
+        path: "/settings/return-reasons",
+      },
+      {
+        type: "link",
+        title: "Sales Channels",
+        path: "/settings/sales-channels",
+      },
+      {
+        type: "link",
+        title: "Product Types",
+        path: "#",
+      },
+      {
+        type: "link",
+        title: "Product Tags",
+        path: "#",
+      },
+      {
+        type: "link",
+        title: "Location & Shipping",
+        path: "/settings/locations",
+      },
+      {
+        type: "category",
+        title: "Developer Settings",
+        children: [
+          {
+            type: "link",
+            title: "Publishable API Keys",
+            path: "#",
+          },
+          {
+            type: "link",
+            title: "Secret API Keys",
+            path: "#",
+          },
+          {
+            type: "link",
+            title: "Workflows",
+            path: "/settings/executions",
+          },
+        ],
+      },
+      {
+        type: "link",
+        title: "Profile",
+        path: "/settings/profile",
+      },
+    ],
   },
 ])
