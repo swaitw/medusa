@@ -133,7 +133,7 @@ describe("IndexModuleService syncIndexConfig", function () {
 
   afterEach(afterEach_)
 
-  it.only("should full sync all entities when the config has changed", async () => {
+  it("should full sync all entities when the config has changed", async () => {
     await setTimeout(1000)
 
     const currentMetadata = await indexMetadataService.list()
@@ -191,6 +191,7 @@ describe("IndexModuleService syncIndexConfig", function () {
     ;(index as any).buildSchemaObjectRepresentation_()
 
     let configurationChecker = new Configuration({
+      logger,
       schemaObjectRepresentation: (index as any).schemaObjectRepresentation_,
       indexMetadataService,
       indexSyncService,
@@ -277,6 +278,7 @@ describe("IndexModuleService syncIndexConfig", function () {
     )
 
     configurationChecker = new Configuration({
+      logger,
       schemaObjectRepresentation: (index as any).schemaObjectRepresentation_,
       indexMetadataService,
       indexSyncService,

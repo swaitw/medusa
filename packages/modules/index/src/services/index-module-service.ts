@@ -130,6 +130,7 @@ export default class IndexModuleService
       })
 
       const configurationChecker = new Configuration({
+        logger: this.logger_,
         schemaObjectRepresentation: this.schemaObjectRepresentation_,
         indexMetadataService: this.indexMetadataService_,
         indexSyncService: this.indexSyncService_,
