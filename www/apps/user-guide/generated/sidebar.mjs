@@ -371,7 +371,16 @@ export const generatedSidebar = [
         "type": "link",
         "title": "Users",
         "path": "/settings/users",
-        "children": []
+        "children": [
+          {
+            "loaded": true,
+            "isPathHref": true,
+            "type": "link",
+            "title": "Invites",
+            "path": "/settings/users/invites",
+            "children": []
+          }
+        ]
       },
       {
         "loaded": true,

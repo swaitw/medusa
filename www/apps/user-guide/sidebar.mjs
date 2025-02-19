@@ -228,6 +228,13 @@ export const sidebar = sidebarAttachHrefCommonOptions([
         type: "link",
         title: "Users",
         path: "/settings/users",
+        children: [
+          {
+            type: "link",
+            title: "Invites",
+            path: "/settings/users/invites",
+          },
+        ],
       },
       {
         type: "link",
