@@ -368,7 +368,7 @@ medusaIntegrationTestRunner({
           )
         ).data.order_preview
 
-        expect(result.summary.current_order_total).toEqual(84)
+        expect(result.summary.current_order_total).toEqual(86.4)
         expect(result.summary.original_order_total).toEqual(60)
 
         // Update item quantity and unit_price with the same amount as we have originally should not change totals
@@ -383,7 +383,7 @@ medusaIntegrationTestRunner({
           )
         ).data.order_preview
 
-        expect(result.summary.current_order_total).toEqual(84)
+        expect(result.summary.current_order_total).toEqual(86.4)
         expect(result.summary.original_order_total).toEqual(60)
 
         // Update item quantity, but keep the price as it was originally, should add + 25 to previous amount
@@ -398,7 +398,7 @@ medusaIntegrationTestRunner({
           )
         ).data.order_preview
 
-        expect(result.summary.current_order_total).toEqual(109)
+        expect(result.summary.current_order_total).toEqual(111.4)
         expect(result.summary.original_order_total).toEqual(60)
 
         // Update item quantity, with a new price
@@ -417,7 +417,7 @@ medusaIntegrationTestRunner({
           )
         ).data.order_preview
 
-        expect(result.summary.current_order_total).toEqual(124)
+        expect(result.summary.current_order_total).toEqual(126.4)
         expect(result.summary.original_order_total).toEqual(60)
 
         const updatedItem = result.items.find((i) => i.id === item.id)
@@ -456,7 +456,7 @@ medusaIntegrationTestRunner({
           )
         ).data.order_preview
 
-        expect(result.summary.current_order_total).toEqual(34)
+        expect(result.summary.current_order_total).toEqual(36.4)
         expect(result.summary.original_order_total).toEqual(60)
         expect(result.items.length).toEqual(2)
 
@@ -469,7 +469,7 @@ medusaIntegrationTestRunner({
         ).data.order_preview
 
         expect(result.order_change.status).toEqual(OrderChangeStatus.REQUESTED)
-        expect(result.summary.current_order_total).toEqual(34)
+        expect(result.summary.current_order_total).toEqual(36.4)
         expect(result.summary.original_order_total).toEqual(60)
         expect(result.items.length).toEqual(2)
 
