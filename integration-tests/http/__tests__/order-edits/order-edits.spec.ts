@@ -505,5 +505,78 @@ medusaIntegrationTestRunner({
         expect(result[0].confirmed_by).toEqual(expect.stringContaining("user_"))
       })
     })
+
+    describe("Order Edit Shipping Methods", () => {
+      it("should add a shipping method through an order edit", async () => {
+        await api.post(
+          "/admin/order-edits",
+          { order_id: order.id, description: "Test" },
+          adminHeaders
+        )
+
+        const orderId = order.id
+
+        const shippingMethodResponse = await api.post(
+          `/admin/order-edits/${orderId}/shipping-method`,
+          { shipping_option_id: shippingOption.id, custom_amount: 5 },
+          adminHeaders
+        )
+
+        expect(
+          shippingMethodResponse.data.order_preview.shipping_methods.length
+        ).toEqual(2)
+        expect(
+          shippingMethodResponse.data.order_preview.shipping_methods
+        ).toEqual(
+          expect.arrayContaining([
+            expect.objectContaining({
+              amount: 10,
+            }),
+            expect.objectContaining({
+              amount: 5,
+            }),
+          ])
+        )
+
+        const requestResult = await api.post(
+          `/admin/order-edits/${orderId}/request`,
+          {},
+          adminHeaders
+        )
+
+        expect(requestResult.data.order_preview.order_change.status).toEqual(
+          OrderChangeStatus.REQUESTED
+        )
+
+        await api.post(
+          `/admin/order-edits/${orderId}/confirm`,
+          {},
+          adminHeaders
+        )
+
+        const orderResult = await api.get(
+          `/admin/orders/${orderId}`,
+          adminHeaders
+        )
+
+        expect(orderResult.data.order.shipping_methods.length).toEqual(2)
+        expect(orderResult.data.order.shipping_methods).toEqual(
+          expect.arrayContaining([
+            expect.objectContaining({ amount: 10 }),
+            expect.objectContaining({ amount: 5 }),
+          ])
+        )
+
+        const orderChangesResult = await api.get(
+          `/admin/orders/${orderId}/changes?change_type=edit`,
+          adminHeaders
+        )
+
+        expect(orderChangesResult.data.order_changes.length).toEqual(1)
+        expect(orderChangesResult.data.order_changes[0].status).toEqual(
+          OrderChangeStatus.CONFIRMED
+        )
+      })
+    })
   },
 })
