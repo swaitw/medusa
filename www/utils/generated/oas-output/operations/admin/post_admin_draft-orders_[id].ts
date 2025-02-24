@@ -1,8 +1,8 @@
 /**
- * @oas [get] /admin/draft-orders/{id}
- * operationId: GetDraftOrdersId
- * summary: Get a Draft Order
- * description: Retrieve a draft order by its ID. You can expand the draft order's relations or select the fields that should be returned using the query parameters.
+ * @oas [post] /admin/draft-orders/{id}
+ * operationId: PostDraftOrdersId
+ * summary: Update a Draft Order
+ * description: Update a draft order's details.
  * x-authenticated: true
  * parameters:
  *   - name: id
@@ -29,11 +29,16 @@
  *   - api_token: []
  *   - cookie_auth: []
  *   - jwt_token: []
+ * requestBody:
+ *   content:
+ *     application/json:
+ *       schema:
+ *         $ref: "#/components/schemas/AdminUpdateDraftOrder"
  * x-codeSamples:
  *   - lang: Shell
  *     label: cURL
  *     source: |-
- *       curl '{backend_url}/admin/draft-orders/{id}' \
+ *       curl -X POST '{backend_url}/admin/draft-orders/{id}' \
  *       -H 'Authorization: Bearer {access_token}'
  * tags:
  *   - Draft Orders
@@ -56,7 +61,7 @@
  *     $ref: "#/components/responses/invalid_request_error"
  *   "500":
  *     $ref: "#/components/responses/500_error"
- * x-workflow: getOrderDetailWorkflow
+ * x-workflow: updateOrderWorkflow
  * 
 */
 
