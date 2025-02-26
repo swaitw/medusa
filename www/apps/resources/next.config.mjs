@@ -128,6 +128,11 @@ const nextConfig = {
         destination: "/deployment",
         permanent: true,
       },
+      {
+        source: "/recipes/integrate-ecommerce-stack",
+        destination: "/recipes/erp",
+        permanent: true,
+      },
     ]
   },
   outputFileTracingExcludes: {

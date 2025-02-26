@@ -916,8 +916,12 @@ export const filesMap = [
     "pathname": "/recipes/ecommerce"
   },
   {
-    "filePath": "/www/apps/resources/app/recipes/integrate-ecommerce-stack/page.mdx",
-    "pathname": "/recipes/integrate-ecommerce-stack"
+    "filePath": "/www/apps/resources/app/recipes/erp/odoo/page.mdx",
+    "pathname": "/recipes/erp/odoo"
+  },
+  {
+    "filePath": "/www/apps/resources/app/recipes/erp/page.mdx",
+    "pathname": "/recipes/erp"
   },
   {
     "filePath": "/www/apps/resources/app/recipes/marketplace/examples/restaurant-delivery/page.mdx",

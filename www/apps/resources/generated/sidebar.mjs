@@ -156,6 +156,23 @@ export const generatedSidebar = [
         "loaded": true,
         "isPathHref": true,
         "type": "link",
+        "path": "/recipes/erp",
+        "title": "Integrate ERP",
+        "children": [
+          {
+            "loaded": true,
+            "isPathHref": true,
+            "type": "link",
+            "path": "/recipes/erp/odoo",
+            "title": "Odoo Integration",
+            "children": []
+          }
+        ]
+      },
+      {
+        "loaded": true,
+        "isPathHref": true,
+        "type": "link",
         "path": "/recipes/b2b",
         "title": "B2B",
         "children": []
@@ -183,14 +200,6 @@ export const generatedSidebar = [
         "type": "link",
         "path": "/recipes/ecommerce",
         "title": "Ecommerce",
-        "children": []
-      },
-      {
-        "loaded": true,
-        "isPathHref": true,
-        "type": "link",
-        "path": "/recipes/integrate-ecommerce-stack",
-        "title": "Integrate Ecommerce Stack",
         "children": []
       },
       {
