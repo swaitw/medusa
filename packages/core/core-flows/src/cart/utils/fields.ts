@@ -35,6 +35,11 @@ export const cartFieldsForRefreshSteps = [
   "customer.*",
   "customer.groups.*",
   "promotions.code",
+  "payment_collection.id",
+  "payment_collection.raw_amount",
+  "payment_collection.amount",
+  "payment_collection.currency_code",
+  "payment_collection.payment_sessions.id",
 ]
 
 export const completeCartFields = [
