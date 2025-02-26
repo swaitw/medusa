@@ -26,6 +26,9 @@ const withMDX = mdx({
               projectPath: path.resolve("..", "ui"),
               contentPath: "src/content/docs",
             },
+            "user-guide": {
+              projectPath: path.resolve("..", "user-guide"),
+            },
           },
         },
       ],
