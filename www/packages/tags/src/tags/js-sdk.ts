@@ -28,6 +28,10 @@ export const jsSdk = [
     "path": "/references/js-sdk/admin/customerGroup"
   },
   {
+    "title": "draftOrder",
+    "path": "/references/js-sdk/admin/draftOrder"
+  },
+  {
     "title": "exchange",
     "path": "/references/js-sdk/admin/exchange"
   },
