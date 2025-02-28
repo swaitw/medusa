@@ -1,0 +1,317 @@
+import { AcademicCapSolid, UsersSolid } from "@medusajs/icons"
+
+export const metadata = {
+  title: `B2B Recipe`,
+}
+
+# {metadata.title}
+
+This recipe provides the general steps to implement a B2B store with Medusa.
+
+<Note title="Tip">
+
+Medusa has a ready-to-use B2B starter that you install and use in [this GitHub repository](https://github.com/medusajs/b2b-starter-medusa).
+
+</Note>
+
+## Overview
+
+In a B2B store, you provide different types of customers with relevant pricing, products, shopping experience, and more.
+
+Medusa’s commerce modules, including Sales Channel, Customer, and Pricing modules facilitate implementing this setup. Medusa’s architecture and extendible nature allow you to customize your store based on your use case.
+
+<Note title="Related use-case">
+
+[Visionary: Frictionless B2B ecommerce with Medusa](https://medusajs.com/blog/visionary/)
+
+</Note>
+
+---
+
+## Create B2B Sales Channel
+
+Use sales channels to set product availability per channel. In this case, create a B2B sales channel that includes only B2B products.
+
+You can create a sales channel through the Medusa Admin or Admin REST APIs.
+
+<CardList items={[
+  {
+    href: "!user-guide!/settings/sales-channels",
+    title: "Using Medusa Admin",
+    text: "Create the sales channel using the Medusa Admin.",
+    icon: UsersSolid,
+  },
+  {
+    href: "!api!/admin#sales-channels_postsaleschannels",
+    title: "Using Admin API",
+    text: "Create the sales channel using the REST APIs.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+---
+
+## Create a Publishable API Key
+
+Use publishable API keys to specify the context of client requests:
+
+- You associate the publishable API key with one or more sales channels.
+- In a client such as a storefront, you pass the publishable API key in the header of your requests.
+
+Then, all products retrieved belong to the associated sales channel(s).
+
+You can create a publishable API key through the Medusa Admin or the Admin REST APIs, then associate it with the B2B sales channel. Later, you'll use this key when developing your B2B storefront.
+
+### Create Key
+
+<CardList items={[
+  {
+    href: "!user-guide!/settings/developer/publishable-api-keys",
+    title: "Using Medusa Admin",
+    text: "Create the API key using the Medusa Admin.",
+    icon: UsersSolid,
+  },
+  {
+    href: "!api!/admin#api-keys_postapikeys",
+    title: "Using Admin API",
+    text: "Create the API key using the REST APIs.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+### Associate Key with Sales Channel
+
+<CardList items={[
+  {
+    href: "!user-guide!/settings/developer/publishable-api-keys#manage-publishable-api-keys-sales-channels",
+    title: "Using Medusa Admin",
+    text: "Associate the key with the sales channel using the Medusa Admin.",
+    icon: UsersSolid,
+  },
+  {
+    href: "!api!/admin#api-keys_postapikeysidsaleschannels",
+    title: "Using Admin API",
+    text: "Associate the key with the sales channel using the REST APIs.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+---
+
+## Add Products to B2B Sales Channel
+
+You can create new products or add existing ones to the B2B sales channel using the Medusa Admin or Admin REST APIs.
+
+### Create Products
+
+<CardList items={[
+  {
+    href: "!user-guide!/products/create",
+    title: "Using Medusa Admin",
+    text: "Create the products using the Medusa Admin.",
+    icon: UsersSolid,
+  },
+  {
+    href: "!api!/admin#products_postproducts",
+    title: "Using Admin API",
+    text: "Create the products using the REST APIs.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+### Add Products to Sales Channel
+
+<CardList items={[
+  {
+    href: "!user-guide!/settings/sales-channels#manage-products-in-sales-channel",
+    title: "Using Medusa Admin",
+    text: "Create the products using the Medusa Admin.",
+    icon: UsersSolid,
+  },
+  {
+    href: "!api!/admin#sales-channels_postsaleschannelsidproductsbatchadd",
+    title: "Using Admin API",
+    text: "Add the products to the sales channel using the REST APIs.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+---
+
+## Create B2B Module with Relationship to Customer Groups
+
+Use customer groups to organize your customers into different groups. Then, you can apply different prices for each group.
+
+This is useful in B2B sales, as you often negotiate special prices with each customer or company.
+
+You can create a B2B module that adds necessary data models to represent a B2B company. Then, you link that company to a customer group, which is defined in the Customer Module. Any customer belonging to that group also belongs to the company, meaning they're a B2B customer.
+
+<CardList items={[
+  {
+    href: "!docs!/learn/fundamentals/modules",
+    title: "Create Module",
+    text: "Learn how to create a module.",
+    icon: AcademicCapSolid,
+  },
+  {
+    href: "!docs!/learn/fundamentals/module-links",
+    title: "Define Module Links",
+    text: "Define links between data models.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+## Add B2B Customers
+
+After adding your B2B customer group, add B2B customers and assign them to the B2B customer group.
+
+You can do that through the Medusa Admin or Admin REST APIs.
+
+### Create Customers
+
+<CardList items={[
+  {
+    href: "!user-guide!/customers/manage",
+    title: "Using Medusa Admin",
+    text: "Create customers using the Medusa Admin.",
+    icon: UsersSolid,
+  },
+  {
+    href: "!api!/admin#customers_postcustomers",
+    title: "Using Admin API",
+    text: "Create customers using the REST APIs.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+### Assign Customers to Groups
+
+<CardList items={[
+  {
+    href: "!user-guide!/customers/manage#manage-customers-groups",
+    title: "Using Medusa Admin",
+    text: "Assign customer to groups using the Medusa Admin.",
+    icon: UsersSolid,
+  },
+  {
+    href: "!api!/admin#customer-groups_postcustomergroupsidcustomersbatch",
+    title: "Using Admin API",
+    text: "Assign customer to groups using the REST APIs.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+---
+
+## Create B2B Price List
+
+Use price lists to set different prices for each B2B customer group, among other conditions.
+
+You can create a price list using the Medusa Admin or the Admin REST APIs. Make sure to set the B2B customer group as a condition.
+
+<CardList items={[
+  {
+    href: "!user-guide!/price-lists/create",
+    title: "Using Medusa Admin",
+    text: "Create price list using the Medusa Admin.",
+    icon: UsersSolid,
+  },
+  {
+    href: "!api!/admin#price-lists_postpricelists",
+    title: "Using Admin API",
+    text: "Create price list using the REST APIs.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+---
+
+## Create Custom Data Model
+
+To implement a more advanced B2B sales flow, add custom data models such as `Company`, `Employee`, `Admin`, and `Buyer` to your B2B module.
+
+This provides more granular control of your B2B sales and allows you to build features like privileges, limits, and more. 
+
+<Card
+  href="!docs!/learn/fundamentals/modules#1-create-data-model"
+  title="Create a Data Model"
+  text="Learn how to create a custom data model in a module."
+  icon={AcademicCapSolid}
+/>
+
+---
+
+## Create an API Route to Check Customers
+
+On the frontend clients communicating with your store, such as the storefront, you need to check whether the currently logged-in customer is a B2B customer.
+
+The API route can check if the customer has any group with an associated company.
+
+<Card
+  href="!docs!/learn/fundamentals/api-routes"
+  title="Create an API Route"
+  text="Learn how to create an API Route in Medusa."
+  icon={AcademicCapSolid}
+/>
+
+---
+
+## Customize Admin
+
+Based on your use case, you may need to customize the Medusa Admin to add new widgets or pages.
+
+The Medusa Admin plugin can be extended to add widgets, new pages, and setting pages.
+
+<CardList items={[
+  {
+    href: "!docs!/learn/fundamentals/admin/widgets",
+    title: "Create Admin Widget",
+    text: "Add widgets into existing admin pages.",
+    icon: AcademicCapSolid,
+  },
+  {
+    href: "!docs!/learn/fundamentals/admin/ui-routes",
+    title: "Create Admin UI Routes",
+    text: "Add new pages to your Medusa Admin.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+<Card
+  href="!docs!/learn/fundamentals/admin/ui-routes#create-settings-page"
+  title="Create Admin Setting Page"
+  text="Add new page to the Medusa Admin settings."
+  icon={AcademicCapSolid}
+  className="mt-1"
+/>
+
+---
+
+## Customize Storefront
+
+Medusa provides a Next.js storefront to use with your application. You can either customize it or build your own to represent your B2B features.
+
+Use the publishable API key you associated with your B2B sales channel in the storefront to ensure only B2B products are retrieved.
+
+<CardList items={[
+  {
+    href: "/nextjs-starter",
+    title: "Next.js Storefront",
+    text: "Learn how to install and customize the Next.js storefront.",
+    icon: AcademicCapSolid,
+  },
+  {
+    href: "/storefront-development",
+    title: "Storefront Development",
+    text: "Find guides for your storefront development.",
+    icon: AcademicCapSolid,
+  },
+]} />
+
+<Card
+  href="!api!/store#publishable-api-key"
+  title="Use Publishable API Keys"
+  text="Learn how to use the publishable API key in client requests."
+  icon={AcademicCapSolid}
+  className="mt-1"
+/>

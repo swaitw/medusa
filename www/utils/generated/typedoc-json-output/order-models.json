@@ -1,0 +1,4308 @@
+{
+	"id": 8834,
+	"name": "order-models",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 8835,
+			"name": "OrderAddress",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "address.ts",
+					"line": 27,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L27"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"target": {
+					"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+					"qualifiedName": "DmlEntity"
+				},
+				"typeArguments": [
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+							"qualifiedName": "DMLEntitySchemaBuilder"
+						},
+						"typeArguments": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 8836,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 8837,
+											"name": "id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the order address."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 5,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L5"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/primary-key.ts",
+													"qualifiedName": "PrimaryKeyModifier"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "../../../../packages/core/utils/src/dml/properties/id.ts",
+															"qualifiedName": "IdProperty"
+														},
+														"name": "IdProperty",
+														"package": "@medusajs/utils"
+													}
+												],
+												"name": "PrimaryKeyModifier",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8838,
+											"name": "customer_id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the customer that the address belongs to."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 6,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L6"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8839,
+											"name": "company",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The company of the order address"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 7,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L7"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8840,
+											"name": "first_name",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The first name of the order address"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 8,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L8"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8841,
+											"name": "last_name",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The last name of the order address"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 9,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L9"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8842,
+											"name": "address_1",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The first line of the order address"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 10,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L10"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8843,
+											"name": "address_2",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The second line of the order address"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 11,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L11"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8844,
+											"name": "city",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The city of the order address"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 12,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L12"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8845,
+											"name": "country_code",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The country code of the order address.\n\n@example us"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 13,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L13"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8846,
+											"name": "province",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The province of the order address"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 14,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L14"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8847,
+											"name": "postal_code",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The postal code of the order address"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 15,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L15"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8848,
+											"name": "phone",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The phone of the order address"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 16,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L16"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8849,
+											"name": "metadata",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Holds custom data in key-value pairs."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "address.ts",
+													"line": 17,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L17"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/json.ts",
+													"qualifiedName": "JSONProperty"
+												},
+												"name": "JSONProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												8837,
+												8838,
+												8839,
+												8840,
+												8841,
+												8842,
+												8843,
+												8844,
+												8845,
+												8846,
+												8847,
+												8848,
+												8849
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "address.ts",
+											"line": 4,
+											"character": 26,
+											"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/address.ts#L4"
+										}
+									]
+								}
+							}
+						],
+						"name": "DMLEntitySchemaBuilder",
+						"package": "@medusajs/utils"
+					},
+					{
+						"type": "literal",
+						"value": "OrderAddress"
+					}
+				],
+				"name": "DmlEntity",
+				"package": "@medusajs/utils"
+			},
+			"defaultValue": "_OrderAddress"
+		},
+		{
+			"id": 8852,
+			"name": "OrderClaimItemImage",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "claim-item-image.ts",
+					"line": 31,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/claim-item-image.ts#L31"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderClaimItemImage"
+		},
+		{
+			"id": 8851,
+			"name": "OrderClaimItem",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "claim-item.ts",
+					"line": 51,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/claim-item.ts#L51"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderClaimItem"
+		},
+		{
+			"id": 8850,
+			"name": "OrderClaim",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "claim.ts",
+					"line": 84,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/claim.ts#L84"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderClaim"
+		},
+		{
+			"id": 8853,
+			"name": "OrderCreditLine",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "credit-line.ts",
+					"line": 31,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/credit-line.ts#L31"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"target": {
+					"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+					"qualifiedName": "DmlEntity"
+				},
+				"typeArguments": [
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+							"qualifiedName": "DMLEntitySchemaBuilder"
+						},
+						"typeArguments": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 8854,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 8855,
+											"name": "id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the order credit line."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "credit-line.ts",
+													"line": 6,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/credit-line.ts#L6"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/primary-key.ts",
+													"qualifiedName": "PrimaryKeyModifier"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "../../../../packages/core/utils/src/dml/properties/id.ts",
+															"qualifiedName": "IdProperty"
+														},
+														"name": "IdProperty",
+														"package": "@medusajs/utils"
+													}
+												],
+												"name": "PrimaryKeyModifier",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8856,
+											"name": "order",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated order."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "credit-line.ts",
+													"line": 7,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/credit-line.ts#L7"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/belongs-to.ts",
+													"qualifiedName": "BelongsTo"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": 8891,
+														"name": "Order"
+													}
+												],
+												"name": "BelongsTo",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8881,
+											"name": "reference",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The table that this credit line references. For example, `payment_collection`."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "credit-line.ts",
+													"line": 10,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/credit-line.ts#L10"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8882,
+											"name": "reference_id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the record in the referenced table. For example, `paycol_123`."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "credit-line.ts",
+													"line": 11,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/credit-line.ts#L11"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8883,
+											"name": "amount",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The amount of the order credit line"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "credit-line.ts",
+													"line": 12,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/credit-line.ts#L12"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8884,
+											"name": "raw_amount",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The raw amount of the order credit line"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "credit-line.ts",
+													"line": 13,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/credit-line.ts#L13"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/json.ts",
+													"qualifiedName": "JSONProperty"
+												},
+												"name": "JSONProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8885,
+											"name": "metadata",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Holds custom data in key-value pairs."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "credit-line.ts",
+													"line": 14,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/credit-line.ts#L14"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/json.ts",
+													"qualifiedName": "JSONProperty"
+												},
+												"name": "JSONProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												8855,
+												8856,
+												8881,
+												8882,
+												8883,
+												8884,
+												8885
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "credit-line.ts",
+											"line": 5,
+											"character": 29,
+											"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/credit-line.ts#L5"
+										}
+									]
+								}
+							}
+						],
+						"name": "DMLEntitySchemaBuilder",
+						"package": "@medusajs/utils"
+					},
+					{
+						"type": "literal",
+						"value": "OrderCreditLine"
+					}
+				],
+				"name": "DmlEntity",
+				"package": "@medusajs/utils"
+			},
+			"defaultValue": "OrderCreditLine_"
+		},
+		{
+			"id": 8887,
+			"name": "OrderExchangeItem",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "exchange-item.ts",
+					"line": 39,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/exchange-item.ts#L39"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderExchangeItem"
+		},
+		{
+			"id": 8886,
+			"name": "OrderExchange",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "exchange.ts",
+					"line": 78,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/exchange.ts#L78"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderExchange"
+		},
+		{
+			"id": 8889,
+			"name": "OrderLineItemAdjustment",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "line-item-adjustment.ts",
+					"line": 24,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/line-item-adjustment.ts#L24"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderLineItemAdjustment"
+		},
+		{
+			"id": 8890,
+			"name": "OrderLineItemTaxLine",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "line-item-tax-line.ts",
+					"line": 24,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/line-item-tax-line.ts#L24"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderLineItemTaxLine"
+		},
+		{
+			"id": 8888,
+			"name": "OrderLineItem",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "line-item.ts",
+					"line": 74,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/line-item.ts#L74"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderLineItem"
+		},
+		{
+			"id": 8915,
+			"name": "OrderChangeAction",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "order-change-action.ts",
+					"line": 72,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-change-action.ts#L72"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderChangeAction"
+		},
+		{
+			"id": 8914,
+			"name": "OrderChange",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "order-change.ts",
+					"line": 85,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-change.ts#L85"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderChange"
+		},
+		{
+			"id": 8916,
+			"name": "OrderItem",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "order-item.ts",
+					"line": 56,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L56"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"target": {
+					"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+					"qualifiedName": "DmlEntity"
+				},
+				"typeArguments": [
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+							"qualifiedName": "DMLEntitySchemaBuilder"
+						},
+						"typeArguments": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 8917,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 8918,
+											"name": "id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the order item."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 8,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L8"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/primary-key.ts",
+													"qualifiedName": "PrimaryKeyModifier"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "../../../../packages/core/utils/src/dml/properties/id.ts",
+															"qualifiedName": "IdProperty"
+														},
+														"name": "IdProperty",
+														"package": "@medusajs/utils"
+													}
+												],
+												"name": "PrimaryKeyModifier",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8919,
+											"name": "version",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The version that the order item belongs to."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 9,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L9"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/number.ts",
+													"qualifiedName": "NumberProperty"
+												},
+												"name": "NumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8920,
+											"name": "unit_price",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The unit price of the order item"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 10,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L10"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8921,
+											"name": "compare_at_unit_price",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The original price of the item before a promotion or sale."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 11,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L11"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8922,
+											"name": "quantity",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The quantity of the order item"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 12,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L12"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8923,
+											"name": "fulfilled_quantity",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The fulfilled quantity of the order item"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 13,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L13"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8924,
+											"name": "delivered_quantity",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The delivered quantity of the order item"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 14,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L14"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8925,
+											"name": "shipped_quantity",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The shipped quantity of the order item"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 15,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L15"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8926,
+											"name": "return_requested_quantity",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The quantity requested to be returned."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 16,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L16"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8927,
+											"name": "return_received_quantity",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The quantity received by a return."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 17,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L17"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8928,
+											"name": "return_dismissed_quantity",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The quantity dismissed by a return."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 18,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L18"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8929,
+											"name": "written_off_quantity",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The quantity written off by an order edit."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 19,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L19"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/big-number.ts",
+													"qualifiedName": "BigNumberProperty"
+												},
+												"name": "BigNumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8930,
+											"name": "metadata",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Holds custom data in key-value pairs."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 20,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L20"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/json.ts",
+													"qualifiedName": "JSONProperty"
+												},
+												"name": "JSONProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8931,
+											"name": "order",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated order."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 21,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L21"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/belongs-to.ts",
+													"qualifiedName": "BelongsTo"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": 8891,
+														"name": "Order"
+													}
+												],
+												"name": "BelongsTo",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8956,
+											"name": "item",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated line item."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-item.ts",
+													"line": 24,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L24"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/has-one-fk.ts",
+													"qualifiedName": "HasOneWithForeignKey"
+												},
+												"typeArguments": [
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 8957,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "order-item.ts",
+																	"line": 24,
+																	"character": 23,
+																	"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L24"
+																}
+															],
+															"signatures": [
+																{
+																	"id": 8958,
+																	"name": "__type",
+																	"variant": "signature",
+																	"kind": 4096,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "order-item.ts",
+																			"line": 24,
+																			"character": 23,
+																			"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L24"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "any"
+																	}
+																}
+															]
+														}
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													}
+												],
+												"name": "HasOneWithForeignKey",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												8918,
+												8919,
+												8920,
+												8921,
+												8922,
+												8923,
+												8924,
+												8925,
+												8926,
+												8927,
+												8928,
+												8929,
+												8930,
+												8931,
+												8956
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "order-item.ts",
+											"line": 7,
+											"character": 23,
+											"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-item.ts#L7"
+										}
+									]
+								}
+							}
+						],
+						"name": "DMLEntitySchemaBuilder",
+						"package": "@medusajs/utils"
+					},
+					{
+						"type": "literal",
+						"value": "OrderItem"
+					}
+				],
+				"name": "DmlEntity",
+				"package": "@medusajs/utils"
+			},
+			"defaultValue": "_OrderItem"
+		},
+		{
+			"id": 8959,
+			"name": "OrderShipping",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "order-shipping-method.ts",
+					"line": 83,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-shipping-method.ts#L83"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderShipping"
+		},
+		{
+			"id": 8960,
+			"name": "OrderSummary",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "order-summary.ts",
+					"line": 34,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-summary.ts#L34"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"target": {
+					"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+					"qualifiedName": "DmlEntity"
+				},
+				"typeArguments": [
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+							"qualifiedName": "DMLEntitySchemaBuilder"
+						},
+						"typeArguments": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 8961,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 8962,
+											"name": "id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the order summary."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-summary.ts",
+													"line": 11,
+													"character": 6,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-summary.ts#L11"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/primary-key.ts",
+													"qualifiedName": "PrimaryKeyModifier"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "../../../../packages/core/utils/src/dml/properties/id.ts",
+															"qualifiedName": "IdProperty"
+														},
+														"name": "IdProperty",
+														"package": "@medusajs/utils"
+													}
+												],
+												"name": "PrimaryKeyModifier",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8963,
+											"name": "version",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The version that the summary belongs to."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-summary.ts",
+													"line": 12,
+													"character": 6,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-summary.ts#L12"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/number.ts",
+													"qualifiedName": "NumberProperty"
+												},
+												"name": "NumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8964,
+											"name": "totals",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The totals of the order summary"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-summary.ts",
+													"line": 13,
+													"character": 6,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-summary.ts#L13"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/json.ts",
+													"qualifiedName": "JSONProperty"
+												},
+												"name": "JSONProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8965,
+											"name": "order",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated order."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order-summary.ts",
+													"line": 14,
+													"character": 6,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-summary.ts#L14"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/belongs-to.ts",
+													"qualifiedName": "BelongsTo"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": 8891,
+														"name": "Order"
+													}
+												],
+												"name": "BelongsTo",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												8962,
+												8963,
+												8964,
+												8965
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "order-summary.ts",
+											"line": 10,
+											"character": 4,
+											"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-summary.ts#L10"
+										}
+									]
+								}
+							}
+						],
+						"name": "DMLEntitySchemaBuilder",
+						"package": "@medusajs/utils"
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 8990,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 8991,
+									"name": "tableName",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isReadonly": true
+									},
+									"sources": [
+										{
+											"fileName": "order-summary.ts",
+											"line": 7,
+											"character": 6,
+											"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-summary.ts#L7"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "order_summary"
+									},
+									"defaultValue": "\"order_summary\""
+								},
+								{
+									"id": 8992,
+									"name": "name",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isReadonly": true
+									},
+									"sources": [
+										{
+											"fileName": "order-summary.ts",
+											"line": 8,
+											"character": 6,
+											"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-summary.ts#L8"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "OrderSummary"
+									},
+									"defaultValue": "\"OrderSummary\""
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										8991,
+										8992
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "order-summary.ts",
+									"line": 6,
+									"character": 4,
+									"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order-summary.ts#L6"
+								}
+							]
+						}
+					}
+				],
+				"name": "DmlEntity",
+				"package": "@medusajs/utils"
+			},
+			"defaultValue": "_OrderSummary"
+		},
+		{
+			"id": 8891,
+			"name": "Order",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "order.ts",
+					"line": 116,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L116"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"target": {
+					"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+					"qualifiedName": "DmlEntity"
+				},
+				"typeArguments": [
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+							"qualifiedName": "DMLEntitySchemaBuilder"
+						},
+						"typeArguments": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 8892,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 8893,
+											"name": "id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the order."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 12,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L12"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/primary-key.ts",
+													"qualifiedName": "PrimaryKeyModifier"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "../../../../packages/core/utils/src/dml/properties/id.ts",
+															"qualifiedName": "IdProperty"
+														},
+														"name": "IdProperty",
+														"package": "@medusajs/utils"
+													}
+												],
+												"name": "PrimaryKeyModifier",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8894,
+											"name": "display_id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The display ID of the order"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 13,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L13"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/autoincrement.ts",
+													"qualifiedName": "AutoIncrementProperty"
+												},
+												"name": "AutoIncrementProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8895,
+											"name": "region_id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the region that the order was purchased in."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 14,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L14"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8896,
+											"name": "customer_id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the customer that placed the order."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 15,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L15"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8897,
+											"name": "version",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The version of the order"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 16,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L16"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/number.ts",
+													"qualifiedName": "NumberProperty"
+												},
+												"name": "NumberProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8898,
+											"name": "sales_channel_id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the sales channel that the order was purchased through."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 17,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L17"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8899,
+											"name": "status",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The status of the order"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 18,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L18"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/enum.ts",
+													"qualifiedName": "EnumProperty"
+												},
+												"typeArguments": [
+													{
+														"type": "query",
+														"queryType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "../../../../packages/core/utils/src/order/status.ts",
+																"qualifiedName": "OrderStatus"
+															},
+															"name": "OrderStatus",
+															"package": "@medusajs/utils",
+															"preferValues": true
+														}
+													}
+												],
+												"name": "EnumProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8900,
+											"name": "is_draft_order",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Whether the order is a draft order."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 19,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L19"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/boolean.ts",
+													"qualifiedName": "BooleanProperty"
+												},
+												"name": "BooleanProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8901,
+											"name": "email",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The email of the order's customer"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 20,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L20"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8902,
+											"name": "currency_code",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The currency code of the order.\n\n@example usd"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 21,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L21"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8903,
+											"name": "no_notification",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Whether the customer should receive notifications for order updates."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 22,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L22"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/boolean.ts",
+													"qualifiedName": "BooleanProperty"
+												},
+												"name": "BooleanProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8904,
+											"name": "metadata",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Holds custom data in key-value pairs."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 23,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L23"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/json.ts",
+													"qualifiedName": "JSONProperty"
+												},
+												"name": "JSONProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8905,
+											"name": "canceled_at",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The date the order was canceled."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 24,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L24"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/date-time.ts",
+													"qualifiedName": "DateTimeProperty"
+												},
+												"name": "DateTimeProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8906,
+											"name": "shipping_address",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated shipping_address."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 25,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L25"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/has-one-fk.ts",
+													"qualifiedName": "HasOneWithForeignKey"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													}
+												],
+												"name": "HasOneWithForeignKey",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8907,
+											"name": "billing_address",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated billing address."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 31,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L31"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/has-one-fk.ts",
+													"qualifiedName": "HasOneWithForeignKey"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													}
+												],
+												"name": "HasOneWithForeignKey",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8908,
+											"name": "summary",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated summary."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 37,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L37"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/has-many.ts",
+													"qualifiedName": "HasMany"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "HasMany",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8909,
+											"name": "items",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated items."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 40,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L40"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/has-many.ts",
+													"qualifiedName": "HasMany"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "HasMany",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8910,
+											"name": "shipping_methods",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated shipping methods."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 43,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L43"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/has-many.ts",
+													"qualifiedName": "HasMany"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "HasMany",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8911,
+											"name": "transactions",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated transactions, which include amounts captured and refunded."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 46,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L46"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/has-many.ts",
+													"qualifiedName": "HasMany"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "HasMany",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8912,
+											"name": "credit_lines",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated credit lines, which include additional payment amounts for an order."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 49,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L49"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/has-many.ts",
+													"qualifiedName": "HasMany"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "HasMany",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8913,
+											"name": "returns",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated returns."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "order.ts",
+													"line": 52,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L52"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/has-many.ts",
+													"qualifiedName": "HasMany"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "HasMany",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												8893,
+												8894,
+												8895,
+												8896,
+												8897,
+												8898,
+												8899,
+												8900,
+												8901,
+												8902,
+												8903,
+												8904,
+												8905,
+												8906,
+												8907,
+												8908,
+												8909,
+												8910,
+												8911,
+												8912,
+												8913
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "order.ts",
+											"line": 11,
+											"character": 19,
+											"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/order.ts#L11"
+										}
+									]
+								}
+							}
+						],
+						"name": "DMLEntitySchemaBuilder",
+						"package": "@medusajs/utils"
+					},
+					{
+						"type": "literal",
+						"value": "Order"
+					}
+				],
+				"name": "DmlEntity",
+				"package": "@medusajs/utils"
+			},
+			"defaultValue": "_Order"
+		},
+		{
+			"id": 8994,
+			"name": "ReturnItem",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "return-item.ts",
+					"line": 59,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-item.ts#L59"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_ReturnItem"
+		},
+		{
+			"id": 8995,
+			"name": "ReturnReason",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "return-reason.ts",
+					"line": 43,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L43"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"target": {
+					"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+					"qualifiedName": "DmlEntity"
+				},
+				"typeArguments": [
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../../../packages/core/utils/src/dml/entity.ts",
+							"qualifiedName": "DMLEntitySchemaBuilder"
+						},
+						"typeArguments": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 8996,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 8997,
+											"name": "id",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The ID of the return reason."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "return-reason.ts",
+													"line": 5,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L5"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/primary-key.ts",
+													"qualifiedName": "PrimaryKeyModifier"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "../../../../packages/core/utils/src/dml/properties/id.ts",
+															"qualifiedName": "IdProperty"
+														},
+														"name": "IdProperty",
+														"package": "@medusajs/utils"
+													}
+												],
+												"name": "PrimaryKeyModifier",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8998,
+											"name": "value",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The value of the return reason"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "return-reason.ts",
+													"line": 6,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L6"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 8999,
+											"name": "label",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The label of the return reason"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "return-reason.ts",
+													"line": 7,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L7"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 9000,
+											"name": "description",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The description of the return reason"
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "return-reason.ts",
+													"line": 8,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L8"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/text.ts",
+													"qualifiedName": "TextProperty"
+												},
+												"name": "TextProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 9001,
+											"name": "metadata",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Holds custom data in key-value pairs."
+													}
+												]
+											},
+											"sources": [
+												{
+													"fileName": "return-reason.ts",
+													"line": 9,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L9"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/properties/json.ts",
+													"qualifiedName": "JSONProperty"
+												},
+												"name": "JSONProperty",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 9002,
+											"name": "parent_return_reason",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated parent_return_reason."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "return-reason.ts",
+													"line": 10,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L10"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/belongs-to.ts",
+													"qualifiedName": "BelongsTo"
+												},
+												"typeArguments": [
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 9005,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "return-reason.ts",
+																	"line": 11,
+																	"character": 17,
+																	"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L11"
+																}
+															],
+															"signatures": [
+																{
+																	"id": 9006,
+																	"name": "__type",
+																	"variant": "signature",
+																	"kind": 4096,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "return-reason.ts",
+																			"line": 11,
+																			"character": 17,
+																			"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "any"
+																	}
+																}
+															]
+														}
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													}
+												],
+												"name": "BelongsTo",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 9007,
+											"name": "return_reason_children",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The associated return_reason_children."
+													}
+												],
+												"modifierTags": [
+													"@expandable"
+												]
+											},
+											"sources": [
+												{
+													"fileName": "return-reason.ts",
+													"line": 15,
+													"character": 4,
+													"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L15"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../packages/core/utils/src/dml/relations/has-many.ts",
+													"qualifiedName": "HasMany"
+												},
+												"typeArguments": [
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 9008,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "return-reason.ts",
+																	"line": 15,
+																	"character": 42,
+																	"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L15"
+																}
+															],
+															"signatures": [
+																{
+																	"id": 9009,
+																	"name": "__type",
+																	"variant": "signature",
+																	"kind": 4096,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "return-reason.ts",
+																			"line": 15,
+																			"character": 42,
+																			"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L15"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "any"
+																	}
+																}
+															]
+														}
+													}
+												],
+												"name": "HasMany",
+												"package": "@medusajs/utils"
+											},
+											"defaultValue": "..."
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												8997,
+												8998,
+												8999,
+												9000,
+												9001,
+												9002,
+												9007
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "return-reason.ts",
+											"line": 4,
+											"character": 26,
+											"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return-reason.ts#L4"
+										}
+									]
+								}
+							}
+						],
+						"name": "DMLEntitySchemaBuilder",
+						"package": "@medusajs/utils"
+					},
+					{
+						"type": "literal",
+						"value": "ReturnReason"
+					}
+				],
+				"name": "DmlEntity",
+				"package": "@medusajs/utils"
+			},
+			"defaultValue": "_ReturnReason"
+		},
+		{
+			"id": 8993,
+			"name": "Return",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "return.ts",
+					"line": 90,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/return.ts#L90"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_Return"
+		},
+		{
+			"id": 9011,
+			"name": "OrderShippingMethodAdjustment",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "shipping-method-adjustment.ts",
+					"line": 33,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/shipping-method-adjustment.ts#L33"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderShippingMethodAdjustment"
+		},
+		{
+			"id": 9012,
+			"name": "OrderShippingMethodTaxLine",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "shipping-method-tax-line.ts",
+					"line": 33,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/shipping-method-tax-line.ts#L33"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderShippingMethodTaxLine"
+		},
+		{
+			"id": 9010,
+			"name": "OrderShippingMethod",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "shipping-method.ts",
+					"line": 40,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/shipping-method.ts#L40"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "_OrderShippingMethod"
+		},
+		{
+			"id": 9013,
+			"name": "OrderTransaction",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "transaction.ts",
+					"line": 89,
+					"character": 13,
+					"url": "https://github.com/medusajs/medusa/blob/f00e6bf660ab96b9d41bc3d424c8d78c54eaa8e7/packages/modules/order/src/models/transaction.ts#L89"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "any"
+			},
+			"defaultValue": "..."
+		}
+	],
+	"groups": [
+		{
+			"title": "Variables",
+			"children": [
+				8835,
+				8852,
+				8851,
+				8850,
+				8853,
+				8887,
+				8886,
+				8889,
+				8890,
+				8888,
+				8915,
+				8914,
+				8916,
+				8959,
+				8960,
+				8891,
+				8994,
+				8995,
+				8993,
+				9011,
+				9012,
+				9010,
+				9013
+			]
+		}
+	],
+	"packageName": "@medusajs/order",
+	"symbolIdMap": {
+		"8834": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/index.ts",
+			"qualifiedName": ""
+		},
+		"8835": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "OrderAddress"
+		},
+		"8836": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object"
+		},
+		"8837": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.id"
+		},
+		"8838": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.customer_id"
+		},
+		"8839": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.company"
+		},
+		"8840": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.first_name"
+		},
+		"8841": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.last_name"
+		},
+		"8842": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.address_1"
+		},
+		"8843": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.address_2"
+		},
+		"8844": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.city"
+		},
+		"8845": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.country_code"
+		},
+		"8846": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.province"
+		},
+		"8847": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.postal_code"
+		},
+		"8848": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.phone"
+		},
+		"8849": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/address.ts",
+			"qualifiedName": "__object.metadata"
+		},
+		"8850": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/claim.ts",
+			"qualifiedName": "OrderClaim"
+		},
+		"8851": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/claim-item.ts",
+			"qualifiedName": "OrderClaimItem"
+		},
+		"8852": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/claim-item-image.ts",
+			"qualifiedName": "OrderClaimItemImage"
+		},
+		"8853": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "OrderCreditLine"
+		},
+		"8854": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "__object"
+		},
+		"8855": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "__object.id"
+		},
+		"8856": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "__object.order"
+		},
+		"8857": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "__function"
+		},
+		"8858": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "__function"
+		},
+		"8859": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object"
+		},
+		"8860": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.id"
+		},
+		"8861": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.display_id"
+		},
+		"8862": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.region_id"
+		},
+		"8863": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.customer_id"
+		},
+		"8864": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.version"
+		},
+		"8865": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.sales_channel_id"
+		},
+		"8866": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.status"
+		},
+		"8867": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.is_draft_order"
+		},
+		"8868": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.email"
+		},
+		"8869": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.currency_code"
+		},
+		"8870": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.no_notification"
+		},
+		"8871": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.metadata"
+		},
+		"8872": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.canceled_at"
+		},
+		"8873": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.shipping_address"
+		},
+		"8874": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.billing_address"
+		},
+		"8875": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.summary"
+		},
+		"8876": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.items"
+		},
+		"8877": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.shipping_methods"
+		},
+		"8878": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.transactions"
+		},
+		"8879": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.credit_lines"
+		},
+		"8880": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.returns"
+		},
+		"8881": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "__object.reference"
+		},
+		"8882": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "__object.reference_id"
+		},
+		"8883": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "__object.amount"
+		},
+		"8884": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "__object.raw_amount"
+		},
+		"8885": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/credit-line.ts",
+			"qualifiedName": "__object.metadata"
+		},
+		"8886": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/exchange.ts",
+			"qualifiedName": "OrderExchange"
+		},
+		"8887": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/exchange-item.ts",
+			"qualifiedName": "OrderExchangeItem"
+		},
+		"8888": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/line-item.ts",
+			"qualifiedName": "OrderLineItem"
+		},
+		"8889": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/line-item-adjustment.ts",
+			"qualifiedName": "OrderLineItemAdjustment"
+		},
+		"8890": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/line-item-tax-line.ts",
+			"qualifiedName": "OrderLineItemTaxLine"
+		},
+		"8891": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "Order"
+		},
+		"8892": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object"
+		},
+		"8893": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.id"
+		},
+		"8894": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.display_id"
+		},
+		"8895": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.region_id"
+		},
+		"8896": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.customer_id"
+		},
+		"8897": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.version"
+		},
+		"8898": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.sales_channel_id"
+		},
+		"8899": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.status"
+		},
+		"8900": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.is_draft_order"
+		},
+		"8901": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.email"
+		},
+		"8902": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.currency_code"
+		},
+		"8903": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.no_notification"
+		},
+		"8904": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.metadata"
+		},
+		"8905": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.canceled_at"
+		},
+		"8906": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.shipping_address"
+		},
+		"8907": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.billing_address"
+		},
+		"8908": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.summary"
+		},
+		"8909": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.items"
+		},
+		"8910": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.shipping_methods"
+		},
+		"8911": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.transactions"
+		},
+		"8912": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.credit_lines"
+		},
+		"8913": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.returns"
+		},
+		"8914": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-change.ts",
+			"qualifiedName": "OrderChange"
+		},
+		"8915": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-change-action.ts",
+			"qualifiedName": "OrderChangeAction"
+		},
+		"8916": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "OrderItem"
+		},
+		"8917": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object"
+		},
+		"8918": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.id"
+		},
+		"8919": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.version"
+		},
+		"8920": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.unit_price"
+		},
+		"8921": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.compare_at_unit_price"
+		},
+		"8922": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.quantity"
+		},
+		"8923": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.fulfilled_quantity"
+		},
+		"8924": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.delivered_quantity"
+		},
+		"8925": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.shipped_quantity"
+		},
+		"8926": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.return_requested_quantity"
+		},
+		"8927": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.return_received_quantity"
+		},
+		"8928": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.return_dismissed_quantity"
+		},
+		"8929": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.written_off_quantity"
+		},
+		"8930": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.metadata"
+		},
+		"8931": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.order"
+		},
+		"8932": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__type"
+		},
+		"8933": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__type"
+		},
+		"8934": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object"
+		},
+		"8935": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.id"
+		},
+		"8936": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.display_id"
+		},
+		"8937": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.region_id"
+		},
+		"8938": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.customer_id"
+		},
+		"8939": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.version"
+		},
+		"8940": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.sales_channel_id"
+		},
+		"8941": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.status"
+		},
+		"8942": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.is_draft_order"
+		},
+		"8943": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.email"
+		},
+		"8944": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.currency_code"
+		},
+		"8945": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.no_notification"
+		},
+		"8946": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.metadata"
+		},
+		"8947": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.canceled_at"
+		},
+		"8948": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.shipping_address"
+		},
+		"8949": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.billing_address"
+		},
+		"8950": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.summary"
+		},
+		"8951": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.items"
+		},
+		"8952": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.shipping_methods"
+		},
+		"8953": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.transactions"
+		},
+		"8954": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.credit_lines"
+		},
+		"8955": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.returns"
+		},
+		"8956": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__object.item"
+		},
+		"8957": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__type"
+		},
+		"8958": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-item.ts",
+			"qualifiedName": "__type"
+		},
+		"8959": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-shipping-method.ts",
+			"qualifiedName": "OrderShipping"
+		},
+		"8960": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "OrderSummary"
+		},
+		"8961": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "__object"
+		},
+		"8962": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "__object.id"
+		},
+		"8963": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "__object.version"
+		},
+		"8964": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "__object.totals"
+		},
+		"8965": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "__object.order"
+		},
+		"8966": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "__type"
+		},
+		"8967": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "__type"
+		},
+		"8968": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object"
+		},
+		"8969": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.id"
+		},
+		"8970": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.display_id"
+		},
+		"8971": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.region_id"
+		},
+		"8972": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.customer_id"
+		},
+		"8973": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.version"
+		},
+		"8974": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.sales_channel_id"
+		},
+		"8975": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.status"
+		},
+		"8976": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.is_draft_order"
+		},
+		"8977": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.email"
+		},
+		"8978": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.currency_code"
+		},
+		"8979": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.no_notification"
+		},
+		"8980": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.metadata"
+		},
+		"8981": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.canceled_at"
+		},
+		"8982": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.shipping_address"
+		},
+		"8983": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.billing_address"
+		},
+		"8984": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.summary"
+		},
+		"8985": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.items"
+		},
+		"8986": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.shipping_methods"
+		},
+		"8987": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.transactions"
+		},
+		"8988": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.credit_lines"
+		},
+		"8989": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order.ts",
+			"qualifiedName": "__object.returns"
+		},
+		"8990": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "__object"
+		},
+		"8991": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "__object.tableName"
+		},
+		"8992": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/order-summary.ts",
+			"qualifiedName": "__object.name"
+		},
+		"8993": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return.ts",
+			"qualifiedName": "Return"
+		},
+		"8994": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-item.ts",
+			"qualifiedName": "ReturnItem"
+		},
+		"8995": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "ReturnReason"
+		},
+		"8996": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__object"
+		},
+		"8997": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__object.id"
+		},
+		"8998": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__object.value"
+		},
+		"8999": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__object.label"
+		},
+		"9000": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__object.description"
+		},
+		"9001": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__object.metadata"
+		},
+		"9002": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__object.parent_return_reason"
+		},
+		"9003": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__type"
+		},
+		"9004": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__type"
+		},
+		"9005": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__type"
+		},
+		"9006": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__type"
+		},
+		"9007": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__object.return_reason_children"
+		},
+		"9008": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__type"
+		},
+		"9009": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/return-reason.ts",
+			"qualifiedName": "__type"
+		},
+		"9010": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/shipping-method.ts",
+			"qualifiedName": "OrderShippingMethod"
+		},
+		"9011": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/shipping-method-adjustment.ts",
+			"qualifiedName": "OrderShippingMethodAdjustment"
+		},
+		"9012": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/shipping-method-tax-line.ts",
+			"qualifiedName": "OrderShippingMethodTaxLine"
+		},
+		"9013": {
+			"sourceFileName": "../../../../packages/modules/order/src/models/transaction.ts",
+			"qualifiedName": "OrderTransaction"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "../../../../packages/modules/order/src/models/index.ts"
+		},
+		"reflections": {
+			"1": 8834
+		}
+	}
+}
